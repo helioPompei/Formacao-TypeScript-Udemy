@@ -1,0 +1,4 @@
+2 - FUNDAMENTOS 
+
+01 - Annotation: é quando definimos o tipo de um dado manualmente;
+02 - Inference é quando o TS identifica e define o tipo de dados para nós;
