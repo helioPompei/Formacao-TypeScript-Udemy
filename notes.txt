@@ -2,3 +2,6 @@
 
 01 - Annotation: é quando definimos o tipo de um dado manualmente;
 02 - Inference é quando o TS identifica e define o tipo de dados para nós;
+
+14 - Interface vs Type 
+( Intaface pode ser acrescentado e o type não pois é como se fosse uma constante )
