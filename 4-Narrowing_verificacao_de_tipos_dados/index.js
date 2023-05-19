@@ -78,3 +78,36 @@ function showDogDetails(dog) {
 }
 showDogDetails(dog1);
 showDogDetails(dog2);
+const showReviews = (review) => {
+    if (typeof review === "number") {
+        switch (review) {
+            case 1:
+                console.log("Nota baixa");
+                break;
+            case 2:
+                console.log("Nota media baixa");
+                break;
+            case 3:
+                console.log("Nota media");
+                break;
+            case 4:
+                console.log("Nota media alta");
+                break;
+            case 5:
+                console.log("Nota alta");
+                break;
+            default:
+                console.log("informe um numero maior que 1 e menor que 5!");
+        }
+    }
+    else if (typeof review === "boolean") {
+        if (review == false) {
+            console.log("Você não avaliou!");
+        }
+        else {
+            console.log("O valor 'true' não é aceito!");
+            return;
+        }
+    }
+};
+showReviews(false);
