@@ -1,7 +1,9 @@
-2 - FUNDAMENTOS 
-
+2 - FUNDAMENTOS ----------------
 01 - Annotation: é quando definimos o tipo de um dado manualmente;
 02 - Inference é quando o TS identifica e define o tipo de dados para nós;
 
 14 - Interface vs Type Intaface pode ser acrescentado e o type não pois é como se fosse uma constante 
 15 - Narrowing é checagem de tipo !
+
+6 - OBJECT TYPES ----------------
+01 - São dados que tem como o tipo objeto (Object literals {} e arrays [])
