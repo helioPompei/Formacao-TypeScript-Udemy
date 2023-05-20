@@ -7,3 +7,7 @@
 
 6 - OBJECT TYPES ----------------
 01 - São dados que tem como o tipo objeto (Object literals {} e arrays [])
+
+10 --------------- DECORATOS ------------
+Decarators podem adicionar funcionalidades extras a classes e funções;
+Basicamente criamos novas funções, que são adicionadas a partir de um @nome;
