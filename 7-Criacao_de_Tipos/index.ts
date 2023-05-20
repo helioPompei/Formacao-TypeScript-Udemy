@@ -56,3 +56,54 @@ const server = {
 
 console.log(getSomeKey(server, "ram"));
 // console.log(getSomeKey(server, "teste"));
+
+// 5 - Keyof type operator
+type Character = { name: string; age: number; hasDriveLicense: boolean };
+type C = keyof Character;
+
+function showCharName(obj: Character, key: C): string {
+  return `${obj[key]}`;
+}
+
+const myChar: Character = {
+  name: "Hélio",
+  age: 21,
+  hasDriveLicense: true,
+};
+console.log(showCharName(myChar, "name"));
+
+// 6 - Typeof type operator
+const userName: string = "Hélio";
+
+const userName2: typeof userName = "João";
+
+// 7 - Indexed Access type
+type Truck = { km: number; kg: number; description: string };
+
+type km = Truck["km"];
+
+const newTruck: Truck = {
+  km: 10000,
+  kg: 5000,
+  description: "Caminhão bacana",
+};
+
+function showKm(km: km) {
+  console.log(`O veiculo tem a km de ${km}`);
+}
+
+showKm(newTruck["km"]);
+
+// 8 - Conditional Expressions type
+interface A {}
+
+interface B extends A {}
+
+type myType = B extends A ? number : string;
+
+// 9 - Template Literals type
+type testA = "text";
+
+type CustomType = `Some ${testA}`;
+
+const testing: CustomType = "Some text";
