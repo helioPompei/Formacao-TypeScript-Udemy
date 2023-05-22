@@ -11,3 +11,11 @@
 10 --------------- DECORATOS ------------
 Decarators podem adicionar funcionalidades extras a classes e funções;
 Basicamente criamos novas funções, que são adicionadas a partir de um @nome;
+
+13 --------- EXPRESS TYPESCRIPT COMMANDS ----------
+npx tsc --init 
+npm i --save-dev @types/express
+npm i --save-dev @types/node
+npm i --save-dev ts-node-dev
+npm i --save-dev typescript
+npm i --save-dev nodemon
