@@ -18,4 +18,16 @@ npm i --save-dev @types/express
 npm i --save-dev @types/node
 npm i --save-dev ts-node-dev
 npm i --save-dev typescript
-npm i --save-dev nodemon
+script: {
+"dev": "ts-node-dev --respawn --transpile-only src/app.ts"
+}
+
+14 ----------- RESTFULL --------------
+npx tsc --init 
+// DEV 
+npm i -D @types/config @types/express @types/mongoose @types/morgan @types/node ts-node-dev typescript
+// PRODUÇÃO
+npm i config dotenv express express-validator mongoose morgan winston 
+script: {
+"dev": "ts-node-dev --respawn --transpile-only src/app.ts"
+}
